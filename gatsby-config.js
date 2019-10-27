@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: `Richard's Web Dev Log`,
-        name: `Richard`,
+        name: `Richard Pastenes`,
         siteUrl: `https://blog.pastenes.dev`,
         description: `Front-end web development, React, GraphQL, Gatsby, JavaScript, JAMstack and a bit of WordPress`,
         hero: {
@@ -50,7 +50,7 @@ module.exports = {
                 background_color: `#fff`,
                 theme_color: `#fff`,
                 display: `standalone`,
-                icon: `src/assets/favicon.png`
+                icon: `src/assets/richard-pastenes-icon.png`
             }
         }
     ]

@@ -16,9 +16,31 @@ Here are some of them:
 
 Back in the day, It took me longer than I want to admit to wrap my head around CSS classes and IDs, then suddenly it hit me: Classes like, classes of cars (sedans, SUVs, wagons, etc), there are many of each class, and IDs like cars IDs, AKA license plates, there is only one car with any given license plate, plus, to refer a car by the license plate has more "weight" that referring to it by the type of car.
 
+```html
+<div class="cars">
+    <ul>
+        <li class="wagon">Subaru Outback</li>
+        <li class="wagon" id="richards-subaru">Subaru Outback</li>
+        <li class="electric">Tesla Model S</li>
+    </ul>
+</div>
+```
+
 ## Ternary operator
 
 I learned this concept first on PHP. Then forgot about it, for years. A year or so ago I ran into it while doing a PHP refreshing course, but this time my creative mind saw more opportunities on how to use such a cool operator.
+
+```javascript
+// Instead of
+if (a > 0) {
+    return "Your number is positive";
+  } else {
+    return "Nope, your number is NOT positive";
+  }
+
+// A ternary operator is way shorter and easy to write
+a > 0 ? "Your number is positive" : "Nope, your number is NOT positive");
+```
 
 ## JavaScript Objects
 
@@ -27,6 +49,18 @@ About half a decade ago I took an Object-Oriented Programming with Java. It was 
 An object is just an organized list of stuff, with keys and values that can be nested. A web page is a collection of objects also known as a "Document". Boom, Aha! moment.
 
 And you can do so many cool things with objects and JavaScript!
+
+```javascript
+// A simple example of what an object looks like:
+var car = new Object();
+car.make = 'Subaru';
+car.model = 'Outback';
+car.year = '2015';
+
+// If we console logit we get the objet key/value pairs:
+console.log(car)
+{make: "Subaru", model: "Outback", year: "2015"}
+```
 
 ## Static sites generators
 
@@ -37,6 +71,14 @@ I've been a WordPress developer for more than half a decade. I can say many good
 it's not only a waste of server resources but a waste of every single user's time. On top of that, caching is a must with WordPress, but caching doesn't decrease the site's dozens if not hundreds of HTTP requests, and performance improvement is not improved by much.
 
 I remember tinkering with plugins that would generate a plain HTML version of any WordPress site, but they had lots of bugs, understandable, considering that the plugin can't possibly accommodate compatibility for all themes and plugins out there.
+
+<div className="Image__Small">
+    <img
+        src="./images/static-site-generator.png"
+        title="Gatsby as a static site generator"
+        alt="How Gatsby works to generate static sites"
+    />
+</div>
 
 The answer: statically generate the front end of a WordPress site using the REST API.
 
