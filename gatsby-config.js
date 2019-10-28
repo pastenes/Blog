@@ -42,15 +42,21 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: "UA-150980723-1"
+            }
+        },
+        {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `Richard's Brain Dump`,
-                short_name: `Novela`,
+                short_name: `Richard`,
                 start_url: `/`,
-                background_color: `#fff`,
-                theme_color: `#fff`,
+                background_color: `#111216`,
+                theme_color: `#111216`,
                 display: `standalone`,
-                icon: `src/assets/richard-pastenes-icon.png`
+                icon: `src/assets/richard-pastenes-icon-dark.png`
             }
         }
     ]
