@@ -5,7 +5,7 @@ module.exports = {
         siteUrl: `https://blog.pastenes.dev`,
         description: `Front-end web development, React, GraphQL, Gatsby, JavaScript, JAMstack and a bit of WordPress`,
         hero: {
-            heading: `Read my collection of web-dev related Aha! moments.`,
+            heading: `A collection of web-dev related Aha! moments.`,
             maxWidth: 652
         },
         social: [
@@ -47,6 +47,12 @@ module.exports = {
                 trackingId: "UA-150980723-1"
             }
         },
+        // {
+        //     resolve: "gatsby-plugin-tinacms",
+        //     options: {
+        //         plugins: ["gatsby-tinacms-git", "gatsby-tinacms-remark"]
+        //     }
+        // },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
