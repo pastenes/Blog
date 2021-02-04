@@ -47,12 +47,7 @@ module.exports = {
                 trackingId: "UA-150980723-1"
             }
         },
-        // {
-        //     resolve: "gatsby-plugin-tinacms",
-        //     options: {
-        //         plugins: ["gatsby-tinacms-git", "gatsby-tinacms-remark"]
-        //     }
-        // },
+        `gatsby-plugin-gatsby-cloud`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
